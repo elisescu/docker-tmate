@@ -16,7 +16,7 @@ RUN apt-get update && \
     apt-get -y install git-core build-essential pkg-config libtool libevent-dev libncurses-dev zlib1g-dev automake libssh-dev cmake ruby && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN git clone https://github.com/elisescu/tmate-slave.git
+RUN git clone https://github.com/elisescu/tmate-slave.git -b elis_dev
 
 RUN cd tmate-slave && \
     ./create_keys.sh && \
