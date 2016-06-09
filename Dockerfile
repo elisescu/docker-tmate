@@ -31,5 +31,3 @@ RUN mkdir -p /etc/my_init.d
 ADD message.sh /etc/my_init.d/message.sh
 
 VOLUME ["/data/"]
-
-RUN /etc/my_init.d/message.sh > /data/server_info.txt
